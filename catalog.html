@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Catalog page</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style_common.css"/>
+        <link rel="stylesheet" href="css/style_catalog.css"/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="css/tablet_version.css"/>
+        <link rel="stylesheet" href="css/mobile_version.css"/>
+    </head>
+    <body>
+        <header id="main_header">
+            <div class="logo">
+                <a href="start_page.html"><div class="logo_img"></div></a>
+            </div><!-- end logo -->
+            <div class="pannel_active">
+                <div class="sing_up">
+                    <a href="#">E-mail sing up</a>
+                </div><!-- end sing_up -->
+                <div class="bag">
+                    <div class="icon_bag"></div>
+                    <a href="shopping_bag.html">Bag</a>
+                    <div id="inf_bag">
+                        <span>&pound;</span>
+                        <div id="fill_bag">0</div>
+                    </div><!-- end inf_bag -->
+                </div><!-- end bag -->
+            </div><!-- end pannel_active -->
+            <div id="bottom_header">
+                <nav class="main_nav">
+                    <ul>
+                        <li><a href="#" class="active">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">HandBags</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Clearance</a></li>
+                        <li><a href="#">Stare Locator</a></li>
+                    </ul>
+                    <div class="search">
+                        <input class="search_input" type="search" placeholder="Style Name"/>
+                        <div class="icon_search"></div><!-- end icon_search -->
+                    </div><!-- end search -->
+                </nav><!-- end main_nav -->
+            </div><!-- end bottom_header -->
+        </header><!-- end main_header -->
+        <nav id="parameters">
+                <ul>
+                    <li id="fashion" class="choosed">
+                        <span class="name_parameter choosed_title">Fashion</span><br/>
+                        <div class="menu_arrow"></div>
+                        <span class="choose_parameter">Casual style</span>
+                        <ul class="drop_down">
+                            <li><input id="nail" type="radio" name="style"/><label for="nail">Nail the 90s</label></li><li class="comma">,</li>
+                            <li><input id="casual_style" type="radio" name="style" checked/><label for="casual_style">Casual style</label></li><li class="comma">,</li>
+                            <li><input id="new_look" type="radio" name="style"/><label for="new_look">New look</label></li><li class="comma">,</li>
+                            <li><input id="sport" type="radio" name="style"/><label for="sport">Sport</label></li><li class="comma">,</li>
+                            <li><input id="vintage" type="radio" name="style"/><label for="vintage">Vintage</label></li><li class="comma">,</li>
+                            <li><input id="classic" type="radio" name="style"/><label for="classic">Сlassical style</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="name_parameter">Product type</span>
+                        <div class="menu_arrow"></div>
+                        <span class="choose_parameter"></span>
+                        <ul  class="drop_down">
+                            <li><input id="petite" type="radio" name="type"/><label for="petite">Petite</label></li><li class="comma">,</li>
+                            <li><input id="ns_product_type" class="not_selected" type="radio" name="type" checked/><label for="ns_product_type">Not selected</label></li><li class="comma">,</li>
+                            <li><input id="coatsandjackets" type="radio" name="type"/><label for="coatsandjackets">Coats&amp;Jackets</label></li><li class="comma">,</li>
+                            <li><input id="dresses" type="radio" name="type"/><label for="dresses">Dresses</label></li><li class="comma">,</li>
+                            <li><input id="jerse_tops" type="radio" name="type"/><label for="jerse_tops">Jersey Tops</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="name_parameter">Color</span><br/>
+                        <div class="menu_arrow"></div>
+                        <span class="choose_parameter"></span>
+                        <ul  class="drop_down">
+                            <li><input id="yellow" type="radio" name="color"/><label for="yellow">Yellow</label></li><li class="comma">,</li>
+                            <li><input id="ns_color" class="not_selected" type="radio" name="color" checked/><label for="ns_color">Not selected</label></li><li class="comma">,</li>
+                            <li><input id="black" type="radio" name="color"/><label for="black">Black</label></li><li class="comma">,</li>
+                            <li><input id="blue" type="radio" name="color"/><label for="blue">Blue</label></li><li class="comma">,</li>
+                            <li><input id="red" type="radio" name="color"/><label for="red">Red</label></li><li class="comma">,</li>
+                            <li><input id="green" type="radio" name="color"/><label for="green">Green</label></li><li class="comma">,</li>
+                            <li><input id="golden" type="radio" name="color"/><label for="golden">Golden</label></li>
+                        </ul>
+                    </li>
+                    <li class="choosed">
+                        <span class="name_parameter choosed_title">Brand</span><br/>
+                        <div class="menu_arrow"></div>
+                        <span class="choose_parameter">Antipodium</span>
+                        <ul  class="drop_down">
+                            <li><input id="chi_chi_london" type="radio" name="brand"/><label for="chi_chi_london">Chi Chi London</label></li><li class="comma">,</li>
+                            <li><input id="antipodium" type="radio" name="brand" checked/><label for="antipodium">Antipodium</label></li><li class="comma">,</li>
+                            <li><input id="adidas" type="radio" name="brand"/><label for="adidas">Adidas</label></li><li class="comma">,</li>
+                            <li><input id="new_balance" type="radio" name="brand"/><label for="new_balance">New Balance</label></li><li class="comma">,</li>
+                            <li><input id="river_island" type="radio" name="brand"/><label for="river_island">River Island</label></li>
+                        </ul>
+                    </li>
+                    <li class="choosed">
+                        <span class="name_parameter choosed_title">Size</span><br/>
+                        <div class="menu_arrow"></div>
+                        <span class="choose_parameter">UK 18</span>
+                        <ul class="drop_down">
+                            <li><input id="size_2" type="radio" name="size"/><label for="size_2">UK 2</label></li><li class="comma">,</li>
+                            <li><input id="size_18" type="radio" name="size" checked/><label for="size_18">UK 18</label></li><li class="comma">,</li>
+                            <li><input id="size_18l" type="radio" name="size"/><label for="size_18l">UK 18L</label></li><li class="comma">,</li>
+                            <li><input id="size_20l" type="radio" name="size"/><label for="size_20l">UK 20L</label></li><li class="comma">,</li>
+                            <li><input id="size_20s" type="radio" name="size"/><label for="size_20s">UK 20S</label></li><li class="comma">,</li>
+                            <li><input id="size_20" type="radio" name="size"/><label for="size_20">UK 20</label></li>
+                        </ul>
+                    </li>
+                    <li id="price_range">
+                        <span class="name_parameter">Price range</span><br/>
+                        <div class="menu_arrow"></div>
+                        <span class="choose_parameter"></span>
+                        <div id="range_field" class="drop_down"> 
+                            <div class="title_range">
+                                <span>&pound; <span id="s1" class="value">12</span></span>
+                                <span>&pound; <span id="s2" class="value">650</span></span>
+                            </div><!-- end title_range -->
+                            <div id="slider" class="slider">
+                                <div class="thumb first"></div>
+                                <div class="thumb second"></div>
+                            </div> 
+                        </div><!-- end range_field -->
+                        <ul id="range_mob" class="drop_down">
+                            <li><input id="ns_select" class="not_selected" type="radio" name="range" checked/><label for="ns_select">Not selected</label></li><li class="comma">,</li>
+                            <li><input id="range_99" type="radio" name="range"/><label for="range_99">To £99</label></li><li class="comma">,</li>
+                            <li><input id="range_100_299" type="radio" name="range"/><label for="range_100_299">£100-£299</label></li><li class="comma">,</li>
+                            <li><input id="range_300" type="radio" name="range"/><label for="range_300">From £300</label></li>
+                        </ul>
+                    </li>
+            </ul>
+        </nav><!-- end parameters -->
+        <main id="catalog">
+            <ul id="catalog_goods">
+                <li>
+                   <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_1.png" alt="shirt"/>
+                        <section class="wrapper_title_catalog">
+                        <h4>Only Skinny Jeans</h4>
+                        <span class="price">&pound;65.50</span>
+                    </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_2.png" alt="suit"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Neck Knitted Jumper</h4>
+                            <span class="price">&pound;76.25</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_3.png" alt="coat"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Turtle Neck Jumper in Rib</h4>
+                            <span class="price">&pound;130.25</span>
+                            <span class="new">New</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <div class="wrapper_image4"></div>
+                        <section class="wrapper_title_catalog">
+                            <h4>With Patchwork Crochet</h4>
+                            <span class="price">&pound;80.60</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li class="center_news">
+                    <header>Last weekend <span class="point_out">extra 50%</span> off on all reduced boots and shoulder bags</header>
+                    <footer>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</footer>
+                </li><!-- end center_news -->
+                <li>
+                  <a href="#">
+                       <div class="wrapper_block5">
+                       <div class="wrapper_image5"></div>
+                            <section class="wrapper_details5">
+                                <header>Levi's</header>
+                                <footer>Buyer's choice</footer>
+                            </section><!-- end wrapper_details -->
+                        </div><!-- end wrapper_block -->
+                        <section class="wrapper_title_catalog">
+                        <h4>Levi’s Jeans for women</h4>
+                        <span class="more_inf">More color</span>
+                    </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                       <img src="img/catalog_page/CatalogPhoto_6.png" alt="shirt"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Boyfriend T-Shirt with
+                                Bohemian Print</h4>
+                            <span class="old_price">&pound;120.00</span>
+                            <span class="percent">-25%</span>
+                            <span class="new_price">&pound;90.00</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_7.png" alt="pullover"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Colour Block</h4>
+                            <span class="price">&pound;550.50</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_8.png" alt="pullover"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Monki Festval Knitted</h4>
+                            <span class="price">&pound;24.75</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_9.png" alt="shirt"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Oversized Cardigan</h4>
+                            <span class="price">&pound;90.00</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_10.png" alt="skirt"/>
+                        <section class="wrapper_title_catalog">
+                            <h4>Paul &amp; Joe Sister Jumper with Neon Trims</h4>
+                            <span class="price">&pound;19.75</span>
+                            <span class="new">New</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <div class="wrapper_block11">
+                            <div class="wrapper_image11"></div>
+                            <section class="wrapper_details11">
+                                <header>Quick view</header>
+                                <span>More photos</span>
+                            </section><!-- end wrapper_details11 -->
+                        </div><!-- end wrapper_block11 -->
+                        <section class="wrapper_title_catalog">
+                            <h4>Only Busted Knee Jean</h4>
+                            <span class="price">&pound;140.50</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <img src="img/catalog_page/CatalogPhoto_12.png" alt="pullover">
+                        <section class="wrapper_title_catalog">
+                            <h4>Boyfriend T-Shirt with Bohemian Print</h4>
+                            <span class="price">&pound;140.50</span>
+                        </section><!-- end wrapper_title_catalog -->
+                    </a>
+                </li>
+            </ul>
+            <button id="button_show_more">
+            Show more
+        </button><!-- end button_more -->
+        </main><!-- end catalog -->
+        <aside id="banners">
+            <a href="#" class="left">
+                <section class="wrapper_banner_left">
+                    <h4>Adidas Blue</h4>
+                    <footer>For men</footer>
+                </section><!-- end wrapper_banner_left -->
+            </a><!-- end left -->
+            <a href="#"  class="center">
+                <div class="center_img"></div>
+                <section class="wrapper_banner_center">
+                    <h4>Repair Patches</h4>
+                    <footer>&pound;150.50</footer>
+                </section><!-- end wrapper_banner_center -->
+            </a><!-- end center -->
+            <a href="#" class="right">
+                <section class="wrapper_banner_right">
+                    <img src="img/common/banner_right.png" alt="bag"/>
+                    <h4>Sale</h4>
+                    <footer>- 70%</footer>
+                </section><!-- end wrapper_banner_right -->
+            </a><!-- end right -->
+        </aside><!-- end banners -->
+        <footer id="main_footer">
+            <div class="links">
+                <section class="quick_links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Store locator</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Size guide</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </section><!-- end quick_links -->
+                <section class="customer_care">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Customer service</a></li>
+                        <li><a href="#">Track my order</a></li>
+                        <li><a href="#">Return policy</a></li>
+                        <li><a href="#">Shipping &amp; delivery</a></li>
+                        <li><a href="#">Contact us</a></li><li><a href="#">Careers</a></li>
+                    </ul>
+                </section><!-- end customer_care -->
+                <div class="right_links">
+                    <section class="guestions">
+                        <h4>Questions</h4>
+                        <div class="tw">
+                            <div class="icon_tw"></div>
+                            <span class="text_tw">Tweet us</span>
+                            <span class="point_out_tw">@template</span>
+                        </div><!-- end tw -->
+                    </section><!-- end guestions -->
+                    <section class="phones">
+                        <h4>Order by phone</h4>
+                        <span>8-800-409-47-12</span>
+                    </section><!-- end phones -->
+                    <div id="delivery">
+                        <span class="delivery_inf">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</span>
+                        <div id="social_network">
+                            <a href="#">
+                                <div class="icon_fb"></div>
+                            </a>
+                            <a href="#">
+                                <div class="icon_tw_blue"></div>
+                            </a>
+                        </div><!-- end social_network -->
+                    </div><!-- end delivery -->
+                </div><!-- end right_links -->
+            </div><!-- end links -->
+            <div class="wrapper_bottom">
+                <div class="bottom">
+                    <div class="copyright">
+                        &copy; 2010-2015, The Template Group Inc.
+                    </div><!-- end copyright -->
+                    <div class="share">
+                        <span>
+                            Share
+                        </span>
+                        <div class="num">
+                            1 437
+                        </div><!-- end num -->
+                    </div><!-- end share -->
+                    <nav id="legal_inf">
+                        <ul>
+                            <li>
+                                <a href="#">Legal notice</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Site map</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!-- end bottom -->
+            </div><!-- end wrapper_bottom -->
+        </footer><!-- end main_footer -->
+        <script src="js/common.js"></script>
+        <script src="js/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* main  */
+
+.back {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px 0 20px 30px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    font: bold 1em "Open Sans";  /* 16px */
+}
+.back a {
+    width: 100%;
+    max-width: 1180px;
+}
+.photo_section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 58px 0;
+}
+.wrapper_photo {
+    width: 77.54237288135593%; /* 915px */
+}
+#big_img {
+    width: 100%;
+    background-image: url("../img/item_page/thumb_0.png");
+    background-repeat: no-repeat;
+}
+#miniature {
+    width: 20.33898305084746%; /* 240px */
+}
+#miniature li {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#miniature img {
+    width: 100%;
+}
+#miniature li.choose_photo:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #000;
+    cursor: default;
+    opacity: 0.5;
+}
+.choose_details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.choose_details h2, #price, #size, h3 {
+    width: 100%;
+    text-align: center;
+}
+.choose_details h2 {
+    font: bold 1.625em "Roboto"; /* 26px */
+}
+.choose_details h3 {
+    font: bold 1.5em "Roboto";  /* 24px */
+    margin: 45px 0 25px 0;
+}
+.sign_pound {
+    width: 100%;
+    margin: 20px 0;
+    font: normal 1.125em "Roboto"; /* 18px */
+    text-align: center;
+}
+.description {
+    width: 650px;
+    font: italic 1em "Times New Roman"; /* 16px */
+    line-height: 1.4em;
+    text-align: center;
+}
+#size,
+#color {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    width: 100%;
+}
+.choose_details label {
+    width: 145px;
+    padding: 19.5px;
+    margin-right: 60px;
+    border: 1px solid #e5e5e5;
+    font: normal 1.5em "Open Sans"; /* 24px */
+    cursor: pointer;
+    text-align: center;
+}
+.choose_details label:last-child {
+    margin-right: 0;
+}
+.choose_details input[type="radio"] {
+    display: none;
+}
+.choose_details input:checked + label {
+    background: #707070;
+}
+#add_item {
+    display: block;
+    width: 340px;
+    border: 1px solid #e5e5e5;
+    padding: 20px 0;
+    margin: 160px 0;
+    background: #fff;
+    font: normal 1.5em "Open Sans"; /* 24px */
+    cursor: pointer;
+}
+#add_item:hover {
+    background: #c8c8c8;
+}
+#add_item:focus {
+    border: 1px solid #f14a58;
+    outline: none;
+}
+#add_item:active {
+    outline: none;
+    background: #f14a58;
+}
