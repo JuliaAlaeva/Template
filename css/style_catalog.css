@@ -11,8 +11,7 @@
 #parameters {
     height: 65px;
     width: 100%;
-    max-width: 1300px;
-    margin: 0 auto 60px auto;
+    margin-bottom: 60px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     background: white;

@@ -300,7 +300,7 @@
         margin-top: 37px;
     }
     .link_button {
-        margin: 87px auto 138px auto;
+        margin: 87px 0 138px 0;
     }
     #all_arrivals_button {
         width: 302px;
@@ -340,9 +340,19 @@
     
     /* open menu */
     
-    #parameters.show_all {
+    body.dis:before {
         position: fixed;
         top: 0;
+        left: 0;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: black;
+        opacity: 0.3;
+        z-index: 2;
+    }
+    #parameters.show_all {
+        position: fixed;
         left: 0;
         display: flex;
         flex-flow: row wrap;

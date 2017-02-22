@@ -29,72 +29,35 @@ function remove_item(event)
     var number = parent_item.getAttribute("data-number");
     var good = cartData[id_item][number];
     
-    var note_rem = doc.createElement("div");
-    note_rem.id = "note_rem";
-    var content = "<span>Are you sure? Item will remove with your bag!</span><br/><button data_inf='yes' class='but_rem_con'>Yes</button><button data_inf='no' class='but_rem_con'>No</button>";
-    note_rem.innerHTML = content;
-    
-    var wrapper_all = doc.getElementById("wrapper_all");
-    
-    var body = doc.getElementsByTagName("body")[0];
-    body.className = "dis";
-    
-    body.appendChild(note_rem);
-    
-    // add event
-    var but_rem_con = doc.getElementsByClassName("but_rem_con");
-    for(var i = 0, k = but_rem_con.length; i < k; i++)
+    if(good[4] == 1)
     {
-        but_rem_con[i].addEventListener('click', confirm_remove);
-    }
-    
-    function confirm_remove(event)
-    { 
-        var current_but = event.currentTarget;
-        body.className = "";
-        body.style.zIndex = "3";
         
-        var note_rem = doc.getElementById("note_rem");
-        note_rem.parentNode.removeChild(note_rem);
+        // remove
+        parent_item.parentNode.removeChild(parent_item);
         
-        if(current_but.getAttribute("data_inf") == "no")
-        {
-            return false;
-        }
+        delete cartData[id_item][number];
         
-        if(good[4] == 1)
+        if(Object.keys(cartData[id_item]).length == 0)
         {
-
-            // remove
-            parent_item.parentNode.removeChild(parent_item);
-
-            delete cartData[id_item][number];
-
-            if(Object.keys(cartData[id_item]).length == 0)
-            {
-                delete cartData[id_item];
-            }
-
+            delete cartData[id_item];
         }
-        else
-        {
-            // uptade count
-            good[4]--;
-        }
-
-        setCartData(cartData);
-
-        if(Object.keys(cartData).length == 0)
-        {
-            empty_bag();
-        }
-
-        show_items();
-        bag();
         
     }
+    else
+    {
+        // uptade count
+        good[4]--;
+    }
     
+    setCartData(cartData);
     
+    if(Object.keys(cartData).length == 0)
+    {
+        empty_bag();
+    }
+    
+    show_items();
+    bag();
 }
 
 // total price

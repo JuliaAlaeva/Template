@@ -37,7 +37,7 @@
     .icon_bag {
         display: none;
     }
-    #bottom_header {
+    .wrapper_icon {
         position: relative;
         height: 100%;
         width: 58px;
@@ -58,12 +58,12 @@
     .main_nav {
         position: absolute;
         top: 69px;
-        left: -321px;
+        left: 0;
         display: none;
         padding-left: 20px;
         border-top: 1px solid #e5e5e5;
         background: #fff;
-        z-index: 4;
+        z-index: 5;
     }
     .main_nav.show_menu {
         display: flex;
@@ -359,7 +359,7 @@
         letter-spacing: 0;
     }
     .link_button {
-        margin: 67px auto 105px auto;
+        margin: 67px 0 105px 0;
     }
     #all_arrivals_button {
         width: 220px;

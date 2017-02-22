@@ -181,8 +181,7 @@ function choose_parameter(event)
 }
 
 // move row
-function move_row(e) 
-{
+function move_row(e) {
     
     // event mouseup
     function clearXY() 
@@ -271,13 +270,6 @@ function tablet_version()
         for(var i = 0, k = all_drop_menu.length; i < k; i++)
         {
             addEvent(all_drop_menu[i], "mousedown", move_row);
-        }
-        
-        // add event for each radio
-        for(var i = 0, k = all_radio.length; k > i; i++)
-        {
-            addEvent(all_radio[i], "change", fill_line);
-            addEvent(all_radio[i], "change", first_parameter);
         }
         
         if(!doc.getElementById("line_parameter"))
@@ -391,7 +383,6 @@ function close_filtres()
 {
     // remove class menu
     parameters.classList.remove("show_all");
-    parameters.style.zIndex = "0";
     
     // remove note
     var note = doc.getElementById("note");
@@ -427,7 +418,6 @@ function show_filtres(event)
 
         // add class menu
         parameters.className = "show_all";
-        parameters.style.zIndex = "5";
         
         // delete arrow
         var menu_arrow_line = doc.getElementById("menu_arrow_line");
@@ -535,6 +525,13 @@ function show_more()
             }  
         }
     }
+}
+
+// add event for each radio
+for(var i = 0, k = all_radio.length; k > i; i++)
+{
+    addEvent(all_radio[i], "change", fill_line);
+    addEvent(all_radio[i], "change", first_parameter);
 }
 
 // add button event

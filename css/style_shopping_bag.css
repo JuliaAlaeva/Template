@@ -125,37 +125,3 @@
 .total_cost .sum {
     font: normal 1.125em "Open Sans"; /* 18px */
 }
-#note_rem {
-    position: absolute;
-    top: 25%;
-    left: 38%;
-    height: 150px;
-    width: 300px;
-    padding: 30px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-    background: white;
-    text-align: center;
-    line-height: 1.5em;
-    z-index: 6;
-}
-#note_rem button {
-    width: 70px;
-    border: 1px solid #e5e5e5;
-    padding: 5px 0;
-    margin: 10px;
-    background: #fff;
-    font: normal 1em "Open Sans";
-    cursor: pointer;
-}
-#note_rem button:hover {
-    background: #c8c8c8;
-}
-#note_rem button:focus {
-    border: 1px solid #f14a58;
-    outline: none;
-}
-#note_rem button:active {
-    outline: none;
-    background: #f14a58;
-}
